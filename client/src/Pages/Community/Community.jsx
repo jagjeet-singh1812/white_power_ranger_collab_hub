@@ -28,12 +28,12 @@ const Community = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde, officiis deleniti sit accusamus quibusdam provident nam dolores cumque ullam.</p>
                 </div>
                 <div className="testimonial-box">
-                    <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcEtPfkVILRTlwikWWVXp2Qvqdbv8wc4rdhV3dxMkqew&s"}></img>
+                    <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV3QJl4a23ScOs1khrTGAcgfYPKvF3cDXBWw&usqp=CAU"}></img>
                     <hr></hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde, officiis deleniti sit accusamus quibusdam provident nam dolores cumque ullam.</p>
                 </div>
                 <div className="testimonial-box">
-                    <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcEtPfkVILRTlwikWWVXp2Qvqdbv8wc4rdhV3dxMkqew&s"}></img>
+                    <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcz33nltQoK9rG6mdMBhRnr0L1yxIvvLeQiA&usqp=CAU"}></img>
                     <hr></hr>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde, officiis deleniti sit accusamus quibusdam provident nam dolores cumque ullam.</p>
                 </div>
