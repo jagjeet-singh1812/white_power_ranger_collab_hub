@@ -7,6 +7,7 @@ import Games from "./Pages/Games/Games"
 import Community from './Pages/Community/Community';
 import Quiz from './Pages/Quiz/Quiz';
 import SubjectiveQuiz from './Pages/Quiz/SubjectiveQuiz';
+import ProfilePage from './Pages/ProfilePage/ProfilePage';
 
 function App() {
   return (
@@ -39,6 +40,10 @@ function App() {
         <Route
           path="/subjectivequiz"
           element={<SubjectiveQuiz></SubjectiveQuiz>}
+        />
+        <Route
+          path="/profile"
+          element={<ProfilePage></ProfilePage>}
         />
 
       </Routes>

@@ -1,10 +1,16 @@
 import React from 'react'
 import "./Community.css"
+import NavBarHome from '../../Components/NavBarHome/NavBarHome'
 
 const Community = () => {
     return (
         <>
 
+        <NavBarHome></NavBarHome>
+
+        <br></br>
+        <br></br>
+        <br></br>
             <center>
                 <p style={{ fontSize: "30px" }}>Community Page</p>
                 <div style={{ display: "flex", flexDirection: "row", gap: "10px" }}>

@@ -1,0 +1,9 @@
+.badges-box{
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px 15px;
+    /* width: calc(33% - 20px); Correct the width calculation and spacing */
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}

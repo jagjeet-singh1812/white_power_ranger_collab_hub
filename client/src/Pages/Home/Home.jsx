@@ -54,13 +54,13 @@ const Home = () => {
         <div className="total-sessions-count" onClick={() => navigate("/games")}>
           <p className='sessions-count-heading'>Games</p>
         </div>
-        <div className="upcoming-sessions-count">
+        <div className="upcoming-sessions-count" onClick={() => navigate("/quiz")}>
           <p className='sessions-count-heading'>Quiz</p>
         </div>
         <div className="past-sessions-count">
           <p className='sessions-count-heading'>Courses</p>
         </div>
-        <div className="request-sessions-count">
+        <div className="request-sessions-count" onClick={()=>navigate("/community")}>
           <p className='sessions-count-heading'>Community</p>
         </div>
       </div>
