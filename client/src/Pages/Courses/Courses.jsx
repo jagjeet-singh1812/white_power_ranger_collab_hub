@@ -34,12 +34,12 @@ const Courses = () => {
 
             <div className="course">
               <img
-                src="https://thecochincollege.edu.in//assets/uploads/department/Physics_Aided/Physics-TCCAD2022ABTkP8Wr.jpg"
+                src="https://img.freepik.com/free-vector/hand-drawn-science-education-background_23-2148499325.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709337600&semt=sph"
                 alt="Physics Course Image"
               />
-              <h2>Physics Explorers</h2>
+              <h2>Science Explorers</h2>
               <p>
-                Embark on a journey to explore the wonders of physics suitable for
+                Embark on a journey to explore the wonders of Science suitable for
                 students in grades 5-10. Learn about basic principles,
                 experiments, and real-world applications in an interactive and
                 accessible way.
@@ -68,32 +68,6 @@ const Courses = () => {
                 Embark on a geometry quest tailored for students in grades 5-10.
                 Explore shapes, angles, and spatial relationships through engaging
                 activities designed to make geometry concepts accessible and fun.
-              </p>
-            </div>
-            <div className="course">
-              <img
-                src="https://www.eurokidsindia.com/blog/wp-content/uploads/2023/09/what-is-algebra.jpg"
-                alt="Algebra Course Image"
-              />
-              <h2>Algebra Adventures</h2>
-              <p>
-                Embark on algebra adventures to learn foundational algebraic
-                concepts suitable for students in grades 5-10. Dive into
-                equations, variables, and expressions in an interactive and
-                supportive learning environment.
-              </p>
-            </div>
-            <div className="course">
-              <img
-                src="https://cdn1.byjus.com/wp-content/uploads/2023/05/Force-And-Motion-1.png"
-                alt="Force and Motion Course Image"
-              />
-              <h2>Force and Motion Mastery</h2>
-              <p>
-                Master the principles of force and motion designed for students in
-                grades 5-10. Explore the fundamentals of physics through
-                interactive experiments and engaging lessons that cater to diverse
-                learning needs.
               </p>
             </div>
           </div>

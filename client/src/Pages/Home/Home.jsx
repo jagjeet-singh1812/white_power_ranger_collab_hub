@@ -66,10 +66,10 @@ const Home = () => {
         </div>
       </div>
       <button onClick={startListening} id='ids' style={{ display: "none" }}>Start Listening</button>
-        <audio autoPlay id='audio-tag'>
+        {/* <audio autoPlay id='audio-tag'>
             <source src="https://file-examples.com/storage/fe7b7e0dc465e22bc9e6da8/2017/11/file_example_MP3_700KB.mp3" type="audio/mpeg" />
             Your browser does not support the audio tag.
-        </audio>
+        </audio> */}
       <br></br>
       <br></br>
 
