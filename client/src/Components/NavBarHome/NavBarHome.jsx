@@ -10,7 +10,7 @@ const NavBarHome = () => {
             <nav className='navbar'>
                 <Link to='/home' className='navbar-logo' >
                     <div className="logo-nav">
-                        <p title="StudApp">StudApp</p>
+                        <p title="StudApp">Thrive</p>
                     </div>
                 </Link>
                 <div className='menu-icon' onClick={()=>navigate("/profile")}>

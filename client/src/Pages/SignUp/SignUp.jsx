@@ -49,12 +49,12 @@ const SignUp = () => {
                 </div>
               </section>
               <div className="input-container-login userid">
-                <label htmlFor="userid">Nick Name</label>
+                <label htmlFor="userid">Ward Name</label>
                 <input className='login-input' id="userid" name="userid" type="text"
                   onChange={(e) => { setNickname(e.target.value) }}
                   value={nickname}
                   required
-                  placeholder='Enter your Nick Name'
+                  placeholder='Enter your Ward Name'
                 />
               </div>
 
@@ -64,17 +64,17 @@ const SignUp = () => {
                   onChange={(e) => { setAge(e.target.value) }}
                   value={age}
                   required
-                  placeholder='Enter your Age'
+                  placeholder='Enter the Age'
                 />
               </div>
 
               <div className="input-container-login userid">
-                <label htmlFor="userid">Standard</label>
+                <label htmlFor="userid">OCE Level</label>
                 <input className='login-input' id="userid" name="userid" type="text"
                   onChange={(e) => { setStandard(e.target.value) }}
                   value={standard}
                   required
-                  placeholder='Enter your Standard'
+                  placeholder='Enter OCE Level'
                 />
               </div>
 

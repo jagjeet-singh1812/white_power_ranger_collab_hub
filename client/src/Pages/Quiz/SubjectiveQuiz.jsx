@@ -41,7 +41,10 @@ const SubjectiveQuiz = () => {
                             style={{padding:"10px",border:"1px solid gray",marginRight:"30px"}}
                         />
                     </div>
-                    <button type="submit" className="btn-quiz-submit" style={{"marginLeft":"20px"}}>
+                    <button type="submit" className="btn-quiz-submit" style={{"marginLeft":"20px"}} onClick={()=>{
+                        alert("Thank you! for completing your daily quiz");
+                        window.location.href = '/home'
+                    }}>
                         Submit
                     </button>
                 </form>
