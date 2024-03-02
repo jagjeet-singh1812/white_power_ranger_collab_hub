@@ -8,14 +8,19 @@ import Community from './Pages/Community/Community';
 import Courses from './Pages/Courses/Courses';
 import Individualcourse from './Components/Individualcourse/Individualcourse';
 
+import Quiz from './Pages/Quiz/Quiz';
+import SubjectiveQuiz from './Pages/Quiz/SubjectiveQuiz';
+
+
 function App() {
   return (
     <>
       <Routes>
         <Route
-          path="/login"
+          path="/"
           element={<Login></Login>}
         />
+
         <Route
           path="/all"
           element={<Individualcourse/>}
@@ -39,6 +44,14 @@ function App() {
         <Route
           path="/community"
           element={<Community></Community>}
+        />
+        <Route
+          path="/quiz"
+          element={<Quiz></Quiz>}
+        />
+        <Route
+          path="/subjectivequiz"
+          element={<SubjectiveQuiz></SubjectiveQuiz>}
         />
 
       </Routes>

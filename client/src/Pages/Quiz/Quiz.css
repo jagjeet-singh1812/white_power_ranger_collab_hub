@@ -1,0 +1,9 @@
+.btn-quiz-submit{
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    background-color: #2954c9;
+    color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #2954c9;
+}
