@@ -4,7 +4,6 @@ import {Link} from "react-router-dom"
 const Games = () => {
     return (
         <>
-
             <div className="sessions-right">
                 <a href="/Game.html">
                 <div className="game1-flipflop">

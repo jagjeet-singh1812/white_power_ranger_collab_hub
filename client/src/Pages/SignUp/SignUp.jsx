@@ -1,16 +1,54 @@
-import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./SignUp.css"
-
 const SignUp = () => {
+  const [password, setPassword] = useState("");
+  const [cpassword, setcPassword] = useState("");
+  const [nickname, setNickname] = useState("");
+  const [age, setAge] = useState("");
+  const [standard, setStandard] = useState("");
+  const [p,showp]=useState(false);
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+
+    try {
+      // const response = await fetch("https://your-backend-api.com/signup", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify({
+      //     nickname,
+      //     age,
+      //     standard,
+      //     password,
+      //   }),
+      // });
+
+      // if (response.ok) {
+        localStorage.setItem(
+          "user",
+          JSON.stringify({
+            nickname,
+            age,
+            standard,
+            password,
+          })
+        );
+        console.log("User registered successfully!");
+        console.error("Registration failed.");
+      // }
+    } catch (error) {
+      console.error("Error during registration:", error);
+    }
+  };
+
   return (
     <>
-
-      <div className='login-body'>
+  <div className='login-body'>
         <div className="split-screen-login">
           <div className="right-login" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-            <form>
+            <form onSubmit={handleSignUp}>
               <section className="copy-login">
                 <h2 style={{ fontSize: "1.8rem", fontWeight: "700", textAlign: "center" }}>Sign Up</h2>
                 <div className="login-container-login">
@@ -24,8 +62,8 @@ const SignUp = () => {
               <div className="input-container-login userid">
                 <label htmlFor="userid">Nick Name</label>
                 <input className='login-input' id="userid" name="userid" type="text"
-                  // onChange={(e) => { setUserid(e.target.value) }}
-                  // value={userid}
+                  onChange={(e) => { setNickname(e.target.value) }}
+                  value={nickname}
                   required
                   placeholder='Enter your Nick Name'
                 />
@@ -33,9 +71,9 @@ const SignUp = () => {
 
               <div className="input-container-login userid">
                 <label htmlFor="userid">Age</label>
-                <input className='login-input' id="userid" name="userid" type="text"
-                  // onChange={(e) => { setUserid(e.target.value) }}
-                  // value={userid}
+                <input className='login-input' id="userid" name="userid" type="number"
+                  onChange={(e) => { setAge(e.target.value) }}
+                  value={age}
                   required
                   placeholder='Enter your Age'
                 />
@@ -44,8 +82,8 @@ const SignUp = () => {
               <div className="input-container-login userid">
                 <label htmlFor="userid">Standard</label>
                 <input className='login-input' id="userid" name="userid" type="text"
-                  // onChange={(e) => { setUserid(e.target.value) }}
-                  // value={userid}
+                  onChange={(e) => { setStandard(e.target.value) }}
+                  value={standard}
                   required
                   placeholder='Enter your Standard'
                 />
@@ -53,10 +91,11 @@ const SignUp = () => {
 
               <div className="input-container-login password">
                 <label htmlFor="password">Password</label>
-                <input className='login-input' id="password" name="password" placeholder="Must be at least 6 characters" type="password"
-                  // <input className='login-input' id="password" name="password" placeholder="Must be at least 6 characters" type={showPassword ? "text" : "password"}
-                  // onChange={(e) => { setPassword(e.target.value) }}
-                  // value={password}
+                <input className='login-input' id="password" name="password" placeholder="Must be at least 6 characters"
+                 type={p ? "text" : "password"}
+                  // <input className='login-input' id="password" name="password" placeholder="Must be at least 6 characters"/>}
+                  onChange={(e) => { setPassword(e.target.value) }}
+                  value={password}
                   required
                 />
               </div>
@@ -66,7 +105,7 @@ const SignUp = () => {
                   type='checkbox'
                   className='login-input'
                   id='showPassword'
-                // onChange={handleTogglePassword}
+                onChange={()=>{showp(!p)}}
                 />
                 <label style={{ marginBottom: "0px", marginLeft: "5px" }} htmlFor='showPassword'>Show Password</label>
               </div>
@@ -75,8 +114,8 @@ const SignUp = () => {
                 <label htmlFor="password">Confirm Password</label>
                 <input className='login-input' id="password" name="password" placeholder="Must be at least 6 characters" type="password"
                   // <input className='login-input' id="password" name="password" placeholder="Must be at least 6 characters" type={showPassword ? "text" : "password"}
-                  // onChange={(e) => { setPassword(e.target.value) }}
-                  // value={password}
+                  onChange={(e) => { setcPassword(e.target.value) }}
+                  value={cpassword}
                   required
                 />
               </div>
@@ -88,9 +127,8 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-
     </>
-  )
-}
+  );
+};
 
-export default SignUp
+export default SignUp;
