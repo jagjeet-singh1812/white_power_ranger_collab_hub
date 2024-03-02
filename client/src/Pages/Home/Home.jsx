@@ -1,96 +1,73 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import { useNavigate } from 'react-router-dom'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
-import React, { useEffect, useState } from "react";
-import "./Home.css";
-import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const [us, setus] = useState(false);
-  const [u, setu] = useState({});
 
   const data = localStorage.getItem("user");
   const name = JSON.parse(data).nickname;
 
-    const navigate=useNavigate()
+  const navigate = useNavigate()
 
-    const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-IN' });
-    const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition();
+  const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-IN' });
+  const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition();
 
-    useEffect(()=>{
-        document.getElementById("ids").click()
+  useEffect(() => {
+    document.getElementById("ids").click()
 
-        return ()=>{
-            SpeechRecognition.stopListening()
-        }
-    }, [])
-
-    if (!browserSupportsSpeechRecognition) {
-        return null
+    return () => {
+      SpeechRecognition.stopListening()
     }
+  }, [])
 
-    console.log(transcript)
-    const str = transcript.toLowerCase();
-    if(str.includes("game")){
-        navigate("/games")
-    }else if(str.includes("quiz")){
-        navigate("/quiz")
-    }else if(str.includes("course")){
-        navigate("/course")
-    }else if(str.includes("community")){
-        navigate("/community")
-    }else if(str.includes("profile")){
-        navigate("/profile")
-    }
+  if (!browserSupportsSpeechRecognition) {
+    return null
+  }
+
+  console.log(transcript)
+  const str = transcript.toLowerCase();
+  if (str.includes("game")) {
+    navigate("/games")
+  } else if (str.includes("quiz")) {
+    navigate("/quiz")
+  } else if (str.includes("course")) {
+    navigate("/course")
+  } else if (str.includes("community")) {
+    navigate("/community")
+  } else if (str.includes("profile")) {
+    navigate("/profile")
+  }
 
 
-    return (
-        <>
-
-            <div className="sessions-right">
-                <div className="total-sessions-count" onClick={()=>navigate("/games")}>
-                    <p className='sessions-count-heading'>Games</p>
-                </div>
-                <div className="upcoming-sessions-count">
-                    <p className='sessions-count-heading'>Quiz</p>
-                </div>
-                <div className="past-sessions-count">
-                    <p className='sessions-count-heading'>Courses</p>
-                </div>
-                <div className="request-sessions-count">
-                    <p className='sessions-count-heading'>Community</p>
-                </div>
-            </div>
-            <button onClick={startListening} id='ids' style={{display: "none"}}>Start Listening</button>
-  const navigate = useNavigate();
   return (
     <>
-    <br></br>
-    <br></br>
-    <br></br>
-        <h1>Hello, {name}</h1>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <p>Hello {name}</p>
+
       <div className="sessions-right">
-        <div
-          className="total-sessions-count"
-          onClick={() => navigate("/games")}
-        >
-          <p className="sessions-count-heading">Games</p>
+        <div className="total-sessions-count" onClick={() => navigate("/games")}>
+          <p className='sessions-count-heading'>Games</p>
         </div>
         <div className="upcoming-sessions-count">
-          <p className="sessions-count-heading">Quiz</p>
+          <p className='sessions-count-heading'>Quiz</p>
         </div>
         <div className="past-sessions-count">
-          <p className="sessions-count-heading">Courses</p>
+          <p className='sessions-count-heading'>Courses</p>
         </div>
         <div className="request-sessions-count">
-          <p className="sessions-count-heading">Community</p>
+          <p className='sessions-count-heading'>Community</p>
         </div>
       </div>
-
+      <button onClick={startListening} id='ids' style={{ display: "none" }}>Start Listening</button>
 
       <br></br>
       <br></br>
+
     </>
   );
 };
