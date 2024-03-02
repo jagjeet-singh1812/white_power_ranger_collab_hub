@@ -11,6 +11,7 @@ import Individualcourse from './Components/Individualcourse/Individualcourse';
 import Quiz from './Pages/Quiz/Quiz';
 import SubjectiveQuiz from './Pages/Quiz/SubjectiveQuiz';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
+import BaseBall from './Pages/BaseBall/BaseBall';
 
 
 
@@ -58,6 +59,10 @@ function App() {
         <Route
           path="/profile"
           element={<ProfilePage></ProfilePage>}
+        />
+        <Route
+          path="/baseball"
+          element={<BaseBall></BaseBall>}
         />
 
       </Routes>
