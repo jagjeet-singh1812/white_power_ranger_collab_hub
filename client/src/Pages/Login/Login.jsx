@@ -12,7 +12,7 @@ const Login = () => {
           <div className="right-login" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
             <form>
               <section className="copy-login">
-                <h2 style={{ fontSize: "1.8rem", fontWeight: "700", textAlign: "center" }}>Mentor Log In</h2>
+                <h2 style={{ fontSize: "1.8rem", fontWeight: "700", textAlign: "center" }}>Log In</h2>
                 <div className="login-container-login">
                   <p style={{ textAlign: "center" }}>New to our Platform?
                     <Link to="/signup" style={{ textDecoration: "none" }}>
@@ -22,7 +22,7 @@ const Login = () => {
                 </div>
               </section>
               <div className="input-container-login userid">
-                <label htmlFor="userid">User Id</label>
+                <label htmlFor="userid">Nick Name</label>
                 <input className='login-input' id="userid" name="userid" type="text"
                   // onChange={(e) => { setUserid(e.target.value) }}
                   // value={userid}
@@ -33,7 +33,7 @@ const Login = () => {
 
               <div className="input-container-login password">
                 <label htmlFor="password">Password</label>
-                <input className='login-input' id="password" name="password" placeholder="Must be at least 6 characters" type="password"
+                <input className='login-input' id="password" name="password" placeholder="Enter Your Password" type="password"
                 // <input className='login-input' id="password" name="password" placeholder="Must be at least 6 characters" type={showPassword ? "text" : "password"}
                   // onChange={(e) => { setPassword(e.target.value) }}
                   // value={password}
