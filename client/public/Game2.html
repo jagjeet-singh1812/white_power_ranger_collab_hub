@@ -4,33 +4,338 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Three.js library -->
-<script src="https://threejs.org/build/three.js"></script>
-
-<!-- TweenLite library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/TextPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ease/Power1.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<
 <link rel="stylesheet" href="./me2.css">
     <title>Tower block</title>
 </head>
 <body>
     <meta name="viewport" content="width=device-width,user-scalable=no">
+    <div class="mycontainer">
 
-<div id="container">
-	<div id="game"></div>
-	<div id="score">0</div>
-	<div id="instructions">Click (or press the spacebar) to place the block</div>
-	<div class="game-over">
-		<h2>Game Over</h2>
-		<p>You did great, you're the best.</p>
-		<p>Click or spacebar to start again</p>
-	</div>
-	<div class="game-ready">
-		<div id="start-button">Start</div>
-		<div></div>
-	</div>
-</div>
-<!-- <script src="./me.tsx" ></script> -->
+        <div class="t1">1</div>
+        <div class="t2">2</div>
+        <div class="t3">3</div>
+        <div class="t4">4</div>
+        <div class="t5">5</div>
+        <div class="t6">6</div>
+        <div class="t7">7</div>
+        <div class="t8">8</div>
+        <div class="t9">9</div>
+        <div class="t10">10</div>
+        <div class="t11">11</div>
+        <div class="t12">12</div>
+        <div class="t13">13</div>
+        <div class="t14">14</div>
+        <div class="t15">15</div>
+        <div class="t16"> </div>
+        </div>
+      <div class="buttoncontainer">
+      <button class="moveone">easy</button>
+       <button class="movethree">hard</button>
+      <button class="movetwo">medium</button>
+      
+      </div>
+      
+      <a class="otherstuff" href="https://codepen.io/TheBrutalTooth/pens/popular/" target="_blank"><img src="https://assets.codepen.io/439415/codepen_logo_1.png" alt="codepenlogo" border="0" width="20px" height="20px"><span>The Brutal Tooth</span></a>
+      
+      
+      
+        <div id="container">
+       
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+         <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" />  
+            <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" />  
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/red.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+              <img class="flake" src="https://assets.codepen.io/439415/white.png" />
+          <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+       <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" /> 
+           <img class="flake" src="https://assets.codepen.io/439415/blue.png" />
+          
+          
+          </div>
+<script src="./me.js" ></script>
 </body>
 </html>
