@@ -1,1 +1,1 @@
-# white_power_ranger_Specially_Disable_Students
+# white_power_ranger_Specially_Disable_Student
