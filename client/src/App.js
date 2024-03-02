@@ -10,6 +10,7 @@ import Individualcourse from './Components/Individualcourse/Individualcourse';
 
 import Quiz from './Pages/Quiz/Quiz';
 import SubjectiveQuiz from './Pages/Quiz/SubjectiveQuiz';
+import ProfilePage from './Pages/ProfilePage/ProfilePage';
 
 
 
@@ -53,6 +54,10 @@ function App() {
         <Route
           path="/subjectivequiz"
           element={<SubjectiveQuiz></SubjectiveQuiz>}
+        />
+        <Route
+          path="/profile"
+          element={<ProfilePage></ProfilePage>}
         />
 
       </Routes>

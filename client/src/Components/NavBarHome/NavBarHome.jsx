@@ -8,7 +8,7 @@ const NavBarHome = () => {
         <>
 
             <nav className='navbar'>
-                <Link to='/' className='navbar-logo' >
+                <Link to='/home' className='navbar-logo' >
                     <div className="logo-nav">
                         <p title="StudApp">StudApp</p>
                     </div>

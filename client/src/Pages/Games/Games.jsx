@@ -1,9 +1,13 @@
 import React from 'react'
 import "./Games.css"
 import {Link} from "react-router-dom"
+import NavBarHome from '../../Components/NavBarHome/NavBarHome'
 const Games = () => {
     return (
         <>
+        <NavBarHome></NavBarHome>
+        <br></br>
+        <br></br>
             <div className="sessions-right">
                 <a href="/Game.html">
                 <div className="game1-flipflop">
