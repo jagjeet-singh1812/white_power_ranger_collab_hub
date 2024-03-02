@@ -5,19 +5,17 @@ import SignUp from "./Pages/SignUp/SignUp"
 import Home from "./Pages/Home/Home"
 import Games from "./Pages/Games/Games"
 import Community from './Pages/Community/Community';
+import Quiz from './Pages/Quiz/Quiz';
+import SubjectiveQuiz from './Pages/Quiz/SubjectiveQuiz';
 
 function App() {
   return (
     <>
       <Routes>
         <Route
-          path="/login"
+          path="/"
           element={<Login></Login>}
         />
-        {/* <Route
-          path="/home"
-          element={<SpeechToText/>}
-        /> */}
         <Route
           path="/signup"
           element={<SignUp></SignUp>}
@@ -33,6 +31,14 @@ function App() {
         <Route
           path="/community"
           element={<Community></Community>}
+        />
+        <Route
+          path="/quiz"
+          element={<Quiz></Quiz>}
+        />
+        <Route
+          path="/subjectivequiz"
+          element={<SubjectiveQuiz></SubjectiveQuiz>}
         />
 
       </Routes>
