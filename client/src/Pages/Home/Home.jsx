@@ -29,16 +29,17 @@ const Home = () => {
   console.log(transcript)
   const str = transcript.toLowerCase();
   if (str.includes("game")) {
-    navigate("/games")
+    window.location.href = "/games";
   } else if (str.includes("quiz")) {
-    navigate("/quiz")
+    window.location.href = "/quiz";
   } else if (str.includes("course")) {
-    navigate("/course")
+    window.location.href = "/course";
   } else if (str.includes("community")) {
-    navigate("/community")
+    window.location.href = "/community";
   } else if (str.includes("profile")) {
-    navigate("/profile")
+    window.location.href = "/profile";
   }
+
 
 
   return (
@@ -54,18 +55,21 @@ const Home = () => {
         <div className="total-sessions-count" onClick={() => navigate("/games")}>
           <p className='sessions-count-heading'>Games</p>
         </div>
-        <div className="upcoming-sessions-count" onClick={() => navigate("/quiz")}>
+        <div className="upcoming-sessions-count" onClick={()=> navigate("/quiz")}>
           <p className='sessions-count-heading'>Quiz</p>
         </div>
-        <div className="past-sessions-count">
+        <div className="past-sessions-count" onClick={()=> navigate("/course")}>
           <p className='sessions-count-heading'>Courses</p>
         </div>
-        <div className="request-sessions-count" onClick={()=>navigate("/community")}>
+        <div className="request-sessions-count" onClick={()=> navigate("/community")}>
           <p className='sessions-count-heading'>Community</p>
         </div>
       </div>
       <button onClick={startListening} id='ids' style={{ display: "none" }}>Start Listening</button>
-
+        <audio autoPlay id='audio-tag'>
+            <source src="https://file-examples.com/storage/fe7b7e0dc465e22bc9e6da8/2017/11/file_example_MP3_700KB.mp3" type="audio/mpeg" />
+            Your browser does not support the audio tag.
+        </audio>
       <br></br>
       <br></br>
 
