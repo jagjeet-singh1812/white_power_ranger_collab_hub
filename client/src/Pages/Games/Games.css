@@ -1,0 +1,65 @@
+
+.sessions-right {
+    /* border: 1px solid #e0e0e0; */
+    /* margin-top: 40px; */
+    /* margin-right: 40px; */
+    width: 40%;
+    margin-right: 20px;
+    /* padding: 40px; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.game1-flipflop {
+    border: 1px solid #e0e0e0;
+    margin-top: 100px;
+    /* width: 80%; */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    /* background: linear-gradient(to bottom right, #ffffff, #ffcc00); */
+    background-image: url("https://shots.codepen.io/username/pen/bNWbvW-800.jpg?version=1523794830");
+}
+
+.game2-tower {
+    border: 1px solid #e0e0e0;
+    margin-top: 240px;
+    margin-top: 40px;
+    /* width: 80%; */
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFYi2yVHbMpQ_Lg-h03Ezo2mnj26KEtN0pdA&usqp=CAU");
+}
+
+.game3-baseball {
+    border: 1px solid #e0e0e0;
+    margin-top: 40px;
+    /* width: 80%; */
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlmrXxyiLOlcCf0OA6S8km6qTUyc_zWx6xVQ&usqp=CAU");
+}
+
+
+.sessions-count-heading {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+@media (max-width:768px) {
+
+    .sessions-right {
+        /* border: 1px solid #e0e0e0; */
+        margin-top: 40px;
+        margin-left: 40px;
+        width: 80%;
+        /* padding: 40px; */
+        border-radius: 10px;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    }
+
+}
