@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./Home.css"
 import { useNavigate } from 'react-router-dom'
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
+import NavBarHome from "../../Components/NavBarHome/NavBarHome"
 
 const Home = () => {
 
@@ -42,12 +43,12 @@ const Home = () => {
 
   return (
     <>
-      <br></br>
+    <NavBarHome></NavBarHome>
       <br></br>
       <br></br>
       <br></br>
 
-      <p>Hello {name}</p>
+      <p style={{fontSize:"1.5rem",marginLeft:"45px",fontWeight:"bold"}}>Hello {name},</p>
 
       <div className="sessions-right">
         <div className="total-sessions-count" onClick={() => navigate("/games")}>

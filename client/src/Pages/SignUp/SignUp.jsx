@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignUp.css"
 const SignUp = () => {
   const [password, setPassword] = useState("");
@@ -8,24 +8,13 @@ const SignUp = () => {
   const [age, setAge] = useState("");
   const [standard, setStandard] = useState("");
   const [p,showp]=useState(false);
+
+  const navigate=useNavigate()
+
   const handleSignUp = async (e) => {
     e.preventDefault();
 
     try {
-      // const response = await fetch("https://your-backend-api.com/signup", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify({
-      //     nickname,
-      //     age,
-      //     standard,
-      //     password,
-      //   }),
-      // });
-
-      // if (response.ok) {
         localStorage.setItem(
           "user",
           JSON.stringify({
@@ -36,8 +25,8 @@ const SignUp = () => {
           })
         );
         console.log("User registered successfully!");
-        console.error("Registration failed.");
-      // }
+        navigate("/home")
+
     } catch (error) {
       console.error("Error during registration:", error);
     }
