@@ -12,6 +12,7 @@ import Quiz from './Pages/Quiz/Quiz';
 import SubjectiveQuiz from './Pages/Quiz/SubjectiveQuiz';
 
 
+
 function App() {
   return (
     <>
