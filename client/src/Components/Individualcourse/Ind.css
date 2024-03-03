@@ -1,108 +1,34 @@
+/* Default styles for larger screens */
 .videoSection {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-  padding: 0 100px;
-  background: var(--background-color);
-}
-.video {
-  width: 30rem;
-  height: 17.25rem;
-  background: rgba(255, 255, 255, 0.15);
-  border: 5.0245px solid #2b2c2c;
-  border-radius: 20px;
-}
-@media only screen and (max-width: 450px) {
-  .videoContainer {
-    width: 264px;
-    height: 168px;
-    border-radius: 8px;
-    border: 2.0245px solid #4debd4;
-  }
-  .video {
-    width: 264px;
-    height: 168px;
-  }
-  .videoSection {
-    height: 60vh;
-    gap: 0rem;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 10px;
-  }
-
-  .videoSection h1 {
-    font-size: 24px;
-    margin-bottom: 4px;
-  }
-
-  .videoText {
-    text-align: center;
-  }
-  .videoSection {
-    margin-top: 40px;
-  }
+  margin-bottom: 20px;
 }
 
-.videoBox {
-  position: relative;
-  overflow: hidden;
-}
-.video {
-  position: absolute;
-  top: 0;
-  left: 0;
+.videoBox iframe {
   width: 100%;
-  height: 100%;
+  max-width: 900px;
+  height: 600px;
 }
-/* SummarySection.css */
 
-/* Mobile-First Styles */
 .summaryContainer {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .summaryText {
-  padding: 20px;
-  background-color: #f0f0f0;
-  text-align: justify;
-  font-size: 16px;
-  color: #333;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid #333;
-  animation: typing 2s steps(40) 1s forwards, fadeIn 1s ease;
-}
-
-/* Typing Animation */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 90%;
-  }
-}
-
-/* Animation for Text Section */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  font-size: 18px;
+  text-align: center;
 }
 
 /* Media Query for Mobile View */
 @media only screen and (max-width: 767px) {
-  .summaryContainer {
-    display: block;
-    margin-top: 20px;
+  .videoBox iframe {
+    width: 100%;
+    height: 300px; /* You might need to adjust the height based on your design */
+  }
+
+  .summaryText {
+    font-size: 16px;
   }
 }
 

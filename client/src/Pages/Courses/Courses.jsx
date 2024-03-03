@@ -1,7 +1,7 @@
 import React from "react";
 import "./course.css";
 import NavBarHome from "../../Components/NavBarHome/NavBarHome";
-
+import {Link} from "react-router-dom"
 const Courses = () => {
   return (
 

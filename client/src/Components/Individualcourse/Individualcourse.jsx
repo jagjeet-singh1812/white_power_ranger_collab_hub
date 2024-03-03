@@ -14,14 +14,16 @@ const API_KEY = "AIzaSyAqu8gVHmRu4z0ZR3CszNf1n6dScysDkJ4";
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 // Get a generative model
-const Individualcourse = () => {
+const Individualcourse = ({cou}) => {
   // Text to summarize
   const [textd, settext] = useState("");
   const [sum, setSum] = useState("");
   const [t, st] = useState(false);
 
+  // const video_id=""
+  const video_id=cou;
   const genSum = () => {
-    axios.get('http://127.0.0.1:3001/')
+    axios.post('https://036w8f25-3001.inc1.devtunnels.ms/summary',{video_id:video_id})
       .then(response => {
         setSum('Response:', response.data.text);
         summarizeText(response.data.text)
@@ -30,7 +32,6 @@ const Individualcourse = () => {
         console.error('Error:', error);
       });
   }
-
   const videoId = 'Big_aFLmekI';
   const summarizeText = async (text) => {
     try {
@@ -57,7 +58,7 @@ const Individualcourse = () => {
           <iframe
             allowFullScreen=""
             frameBorder="0"
-            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0`}
+            src={`https://www.youtube.com/embed/${video_id}?autoplay=1&mute=1&loop=1&playlist=${video_id}&controls=0`}
             width="900px"
             height="600px"
           ></iframe>
