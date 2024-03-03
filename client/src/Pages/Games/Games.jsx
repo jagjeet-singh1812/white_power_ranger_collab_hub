@@ -28,7 +28,7 @@ const Games = () => {
     } else if (str.includes("puzzle") || str.includes("problem")) {
     window.location.href = "/Game2.html";
     } else if (str.includes("baseball") || str.includes("math")) {
-    window.location.href = "/Game3.html";
+    window.location.href = "/baseball";
     }else if(str.includes("back")){
         window.location.href = "/home"
     }

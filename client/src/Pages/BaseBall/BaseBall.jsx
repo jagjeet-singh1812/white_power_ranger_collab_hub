@@ -2,7 +2,11 @@ import React, { useEffect, useState } from "react";
 import NavBarHome from "../../Components/NavBarHome/NavBarHome";
 import gif from "./Tomzepler.gif";
 import "./Baseball.css"
+import {useNavigate } from "react-router-dom";
 const BaseBall = () => {
+
+
+    const navigate=useNavigate()
 
     const [ans, setAns] = useState("");
     const [count, setCount] = useState(0);
@@ -21,6 +25,11 @@ const BaseBall = () => {
         setCount(count + 1);
       } else {
         setLoss(loss + 1);
+      }
+
+      if(loss===10){
+        alert("You Lose")
+        navigate("/games")
       }
 
       setNum1(Math.floor(Math.random() * 10));
