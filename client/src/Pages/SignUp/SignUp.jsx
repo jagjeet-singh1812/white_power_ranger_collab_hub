@@ -69,12 +69,12 @@ const SignUp = () => {
               </div>
 
               <div className="input-container-login userid">
-                <label htmlFor="userid">OCE Level</label>
+                <label htmlFor="userid">OBE Level</label>
                 <input className='login-input' id="userid" name="userid" type="text"
                   onChange={(e) => { setStandard(e.target.value) }}
                   value={standard}
                   required
-                  placeholder='Enter OCE Level'
+                  placeholder='Enter OBE Level'
                 />
               </div>
 

@@ -14,8 +14,8 @@ const TypingEffect = ({ text }) => {
         .callFunction(() => {
           console.log('String typed out!');
         })
-        .pauseFor(2500)
-        .deleteAll()
+        .pauseFor(5500)
+        // .deleteAll()
         .callFunction(() => {
           console.log('All strings were deleted');
         })

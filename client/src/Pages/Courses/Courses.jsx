@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./course.css";
 import NavBarHome from "../../Components/NavBarHome/NavBarHome";
 import {Link} from "react-router-dom"
 const Courses = () => {
+
+  const vibrate = () => {
+    if ("vibrate" in navigator) {
+      navigator.vibrate(4000);
+    }
+  };
+
+  useEffect(() => {
+    vibrate()
+  }, []);
+
+
   return (
 
     <>
@@ -16,7 +28,8 @@ const Courses = () => {
         <div className="container">
           <h2 className="container-heading">Courses</h2>
           <div className="course-list">
-            <div className="course">
+            <Link to="/all">
+            <div className="course" >
               <img
                 src="https://www.vec.ca/wp-content/uploads/2019/03/English-Language-Level-System-704x350.jpg"
                 alt="English Course Image"
@@ -31,6 +44,7 @@ const Courses = () => {
                 interactive learning experience!
               </p>
             </div>
+            </Link>
 
             <div className="course">
               <img

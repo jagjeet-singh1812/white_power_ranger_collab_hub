@@ -20,8 +20,8 @@ const Individualcourse = ({cou}) => {
   const [sum, setSum] = useState("");
   const [t, st] = useState(false);
 
-  // const video_id=""
-  const video_id=cou;
+  const video_id="23_mESawEEc"
+  // const video_id=cou;
   const genSum = () => {
     axios.post('https://036w8f25-3001.inc1.devtunnels.ms/summary',{video_id:video_id})
       .then(response => {
@@ -64,12 +64,15 @@ const Individualcourse = ({cou}) => {
           ></iframe>
         </div>
       </div>
-      <button onClick={genSum}>Summarize the video</button>
+      
+      <center>
+        <button onClick={genSum} style={{backgroundColor:"rgba(32, 59, 232)",color:"white",padding:"10px 20px",fontSize:"1.25rem",borderRadius:"10px"}}>Summarize the video</button>
+      </center>
       <h1>Summary :</h1>
       {/* <p>{textd}</p> */}
       <div className="summaryContainer">
         {/* <p className="summaryText">{textd}</p> */}
-        <p>{t && <TypingEffect text={textd} />}</p>
+        <p>{t ?<TypingEffect text={textd} />:<>Generating  Summary...</>}</p>
       </div>
     </div>
   );

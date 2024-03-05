@@ -1,8 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./Community.css"
 import NavBarHome from '../../Components/NavBarHome/NavBarHome'
 
 const Community = () => {
+
+    const vibrate = () => {
+        if ("vibrate" in navigator) {
+          navigator.vibrate(6000);
+        }
+      };
+    
+      useEffect(() => {
+        vibrate()
+      }, []);
+
+
     return (
         <>
 

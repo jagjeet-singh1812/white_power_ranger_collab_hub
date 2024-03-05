@@ -14,9 +14,13 @@ const Home = () => {
   const driverHasRun = useRef(false);
   const navigate = useNavigate();
 
-  
-
+  const vibrate = () => {
+    if ("vibrate" in navigator) {
+      navigator.vibrate(1000);
+    }
+  };
   useEffect(() => {
+    vibrate();
     console.log(driverHasRun.current);
     if (localStorage.getItem("ayaa")===null) {
       const driverObj = driver({
@@ -94,6 +98,7 @@ const Home = () => {
       <button onClick={startListening} id='ids' style={{ display: "none" }}>Start Listening</button>
       <br />
       <br />
+      <button id="vibrateButton" style={{display:"none"}}></button>
     </>
   );
 };

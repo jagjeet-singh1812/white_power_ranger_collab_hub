@@ -23,7 +23,7 @@ const SubjectiveQuiz = () => {
             userans: answer
           };
 
-        axios.post('http://127.0.0.1:3001/compare', postData)
+        axios.post('https://036w8f25-3001.inc1.devtunnels.ms/compare', postData)
             .then(response => {
                 // console.log('Response:', response.data);
                 alert(`Accuracy is ${response.data.text}`)

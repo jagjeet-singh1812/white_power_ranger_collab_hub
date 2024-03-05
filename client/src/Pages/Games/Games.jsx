@@ -9,7 +9,14 @@ const Games = () => {
     const startListening = () => SpeechRecognition.startListening({ continuous: true, language: 'en-IN' });
     const { transcript, browserSupportsSpeechRecognition } = useSpeechRecognition();
 
+    const vibrate = () => {
+        if ("vibrate" in navigator) {
+          navigator.vibrate(2000);
+        }
+      };
+
     useEffect(() => {
+        vibrate()
         document.getElementById("ids").click()
 
         return () => {
@@ -49,9 +56,11 @@ const Games = () => {
                     <p className='sessions-count-heading'>Puzzle Problem</p>
                 </div>
                 </a>
+                <a href="/baseball">
                 <div className="game3-baseball">
                     <p className='sessions-count-heading'>BaseBall Math</p>
                 </div>
+                </a>
             </div>
             <button onClick={startListening} id='ids' style={{ display: "none" }}>Start Listening</button>
         </>

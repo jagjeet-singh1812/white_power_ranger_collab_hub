@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./ProfilePage.css"
 import NavBarHome from "../../Components/NavBarHome/NavBarHome"
 import HeatMap from '../../Components/HeatMap/HeatMapCustom'
@@ -6,6 +6,16 @@ import Chart from "chart.js/auto";
 import { Bar, Pie } from "react-chartjs-2";
 
 const ProfilePage = () => {
+
+    const vibrate = () => {
+        if ("vibrate" in navigator) {
+          navigator.vibrate(10000);
+        }
+      };
+    
+      useEffect(() => {
+        vibrate()
+      }, []);
 
     const name = JSON.parse(localStorage.getItem("user")).nickname
 

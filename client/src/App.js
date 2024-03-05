@@ -13,8 +13,6 @@ import SubjectiveQuiz from './Pages/Quiz/SubjectiveQuiz';
 import ProfilePage from './Pages/ProfilePage/ProfilePage';
 import BaseBall from './Pages/BaseBall/BaseBall';
 
-
-
 function App() {
   return (
     <>
