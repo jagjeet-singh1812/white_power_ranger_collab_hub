@@ -8,7 +8,7 @@ import axios from "axios";
 import TypingEffect from './TypingEffect';
 
 // Fetch your API_KEY
-const API_KEY = "AIzaSyAqu8gVHmRu4z0ZR3CszNf1n6dScysDkJ4";
+const API_KEY = "AIzhabhailelogalathaidScysDkJ4";
 
 // Access your API key
 const genAI = new GoogleGenerativeAI(API_KEY);
